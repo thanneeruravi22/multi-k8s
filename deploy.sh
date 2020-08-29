@@ -9,7 +9,7 @@ docker push thanneeruravi/multi-server:latest
 docker push thanneeruravi/multi-server:$SHA
 
 docker push thanneeruravi/multi-worker:latest
-docker push thanneeruravi/multi-worker$SHA
+docker push thanneeruravi/multi-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=thanneeruravi/multi-server:$SHA
